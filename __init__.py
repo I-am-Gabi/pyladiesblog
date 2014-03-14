@@ -1,6 +1,7 @@
 import os
 from flask import Flask
 from flask.ext.mongoengine import MongoEngine
+from flask.ext.heroku import Heroku
 
 app = Flask(__name__)
 app.config["MONGODB_SETTINGS"] = {"DB": "pyladies_blog"}
